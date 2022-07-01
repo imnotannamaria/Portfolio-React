@@ -21,8 +21,8 @@ export function Menu() {
                 </button>
             </div>
 
-            {/* <Projects/> */}
-            {/* <Skills/> */}
+            <Projects/>
+            <Skills/>
             <Experience/>
         </div>
     )

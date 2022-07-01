@@ -1,4 +1,4 @@
-import { ArrowCircleDown, GithubLogo, InstagramLogo, LinkedinLogo, Scroll, WhatsappLogo } from 'phosphor-react'
+import { ArrowCircleDown, At, GithubLogo, InstagramLogo, LinkedinLogo, Scroll, WhatsappLogo } from 'phosphor-react'
 import { Link } from 'react-router-dom'
 import annaMaria from '../assets/anna-maria.png'
 import cv from '../assets/cv.pdf'
@@ -6,6 +6,16 @@ import cv from '../assets/cv.pdf'
 export function Header() {
     return ( 
         <div className="flex flex-col gap-8">
+            <div className="flex justify-center items-center gap-4">
+                <span className="block p-2 bg-purple-450 rounded-full">
+                    <At size={24}/>
+                </span>
+                <span className="block text-xl font-medium">
+                    imnotannamaria
+                </span>
+            </div>
+
+
             <div className="flex flex-col justify-between items-center p-4 gap-10 lg:flex-row">
                 <img src={annaMaria} alt="Anna Maria" />
 

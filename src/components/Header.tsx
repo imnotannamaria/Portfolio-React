@@ -1,5 +1,7 @@
 import { ArrowCircleDown, GithubLogo, InstagramLogo, LinkedinLogo, Scroll, WhatsappLogo } from 'phosphor-react'
+import { Link } from 'react-router-dom'
 import annaMaria from '../assets/anna-maria.png'
+import cv from '../assets/cv.pdf'
 
 export function Header() {
     return ( 
@@ -9,7 +11,7 @@ export function Header() {
 
                 <div className="flex flex-col gap-4">
 
-                    <h1 className="text-5xl">Anna Maria</h1>
+                    <h1 className="text-4xl">Anna Maria</h1>
                     <h2 className="text-xl font-medium">Software Engineer</h2>
 
                     <div className="flex gap-6">
@@ -43,10 +45,15 @@ export function Header() {
             </div>
 
             <div className="flex flex-col gap-4 justify-between lg:flex-row">
-                <button className="flex justify-center gap-2 bg-purple-400 px-8 py-4 rounded hover:opacity-80 transition-opacity">
+                {/* <button className="flex justify-center gap-2 bg-purple-400 px-8 py-4 rounded hover:opacity-80 transition-opacity">
                     Download CV
                     <ArrowCircleDown size={24} />
-                </button>
+                </button> */}
+
+                <Link to={cv} target="_blank" className="flex justify-center gap-2 bg-purple-400 px-8 py-4 rounded hover:opacity-80 transition-opacity" download>
+                    Download CV
+                    <ArrowCircleDown size={24} />
+                </Link>
 
                 <button className="flex justify-center gap-2 bg-purple-400 px-8 py-4 rounded hover:opacity-80 transition-opacity">
                     Contact me

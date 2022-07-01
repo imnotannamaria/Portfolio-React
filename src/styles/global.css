@@ -6,3 +6,8 @@ body{
     @apply bg-purple-800 text-white-100;
     -webkit-font-smoothing: antialiased;
 }
+
+:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px #8F89DA;
+}

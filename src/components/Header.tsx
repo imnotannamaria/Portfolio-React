@@ -15,13 +15,25 @@ export function Header() {
                     <h2 className="text-xl font-medium">Software Engineer</h2>
 
                     <div className="flex gap-6">
-                        <a href="" className="hover:text-yellow-400 transition-colors">
+                        <a 
+                            href="https://github.com/imnotannamaria" 
+                            target="_blank" 
+                            className="hover:text-yellow-400 transition-colors"
+                        >
                             <GithubLogo size={35} />
                         </a>
-                        <a href="" className="hover:text-yellow-400 transition-colors">
+                        <a 
+                            href="https://www.linkedin.com/in/imnotannamaria/" 
+                            target="_blank" 
+                            className="hover:text-yellow-400 transition-colors"
+                        >
                             <LinkedinLogo size={35} />
                         </a>
-                        <a href="" className="hover:text-yellow-400 transition-colors">
+                        <a 
+                            href="https://www.instagram.com/imnotannamaria/" 
+                            target="_blank" 
+                            className="hover:text-yellow-400 transition-colors"
+                        >
                             <InstagramLogo size={35} />
                         </a>
                     </div>
@@ -45,20 +57,19 @@ export function Header() {
             </div>
 
             <div className="flex flex-col gap-4 justify-between lg:flex-row">
-                {/* <button className="flex justify-center gap-2 bg-purple-400 px-8 py-4 rounded hover:opacity-80 transition-opacity">
-                    Download CV
-                    <ArrowCircleDown size={24} />
-                </button> */}
-
                 <Link to={cv} target="_blank" className="flex justify-center gap-2 bg-purple-400 px-8 py-4 rounded hover:opacity-80 transition-opacity" download>
                     Download CV
                     <ArrowCircleDown size={24} />
                 </Link>
 
-                <button className="flex justify-center gap-2 bg-purple-400 px-8 py-4 rounded hover:opacity-80 transition-opacity">
+                <a 
+                    href="https://wa.me/5581986698525" 
+                    target="_blank" 
+                    className="flex justify-center gap-2 bg-purple-400 px-8 py-4 rounded hover:opacity-80 transition-opacity"
+                >
                     Contact me
                     <WhatsappLogo size={24} />
-                </button>
+                </a>
             </div>
         </div>
     )

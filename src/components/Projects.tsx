@@ -1,5 +1,5 @@
 import { GithubLogo, Link } from 'phosphor-react'
-import igniteLab from '../assets/igniteLab.png'
+import igniteLab from '../assets/IgniteLab.png'
 
 export function Projects() {
     return (

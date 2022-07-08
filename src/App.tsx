@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { gql, useQuery, ApolloProvider } from '@apollo/client'
+import { ApolloProvider } from '@apollo/client'
 import { client } from "./lib/apollo";
 import { Router } from "./Router";
 import './styles/global.css'
@@ -12,7 +12,6 @@ export function App() {
           <Router/>
         </BrowserRouter>
       </ApolloProvider>
-
     </div>
   )
 }

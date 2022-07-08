@@ -19,10 +19,10 @@ export function Project(props: ProjectsProps) {
                 </div>
                 
                 <div className="flex justify-center gap-2 bg-purple-700 p-4 rounded-b-lg">
-                    <a href={props.siteLink} className="bg-purple-300 p-4 rounded-full hover:opacity-80 transition-opacity">
+                    <a href={props.siteLink} target="_blank" className="bg-purple-300 p-4 rounded-full hover:opacity-80 transition-opacity">
                         <Link size={25} />
                     </a>
-                    <a href={props.githubLink} className="bg-purple-300 p-4 rounded-full hover:opacity-80 transition-opacity">
+                    <a href={props.githubLink} target="_blank" className="bg-purple-300 p-4 rounded-full hover:opacity-80 transition-opacity">
                         <GithubLogo size={24} />
                     </a>
                 </div>

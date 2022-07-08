@@ -8,7 +8,7 @@ export function Skills(props: SkillsProps){
         <div className="flex flex-col gap-4 px-20 py-8 bg-purple-700 rounded-lg hover:bg-purple-400 transition-colors">
             <img src={props.imageUrl} alt="" />
 
-            <span className="text-xl font-medium">{props.title}</span>
+            <span className="text-xl font-medium text-center">{props.title}</span>
         </div>
     )
 }

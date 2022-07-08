@@ -1,19 +1,14 @@
-import TypeScript from '../assets/TypeScript.svg'
+interface SkillsProps {
+    imageUrl: string;
+    title: string;
+}
 
-export function Skills() {
+export function Skills(props: SkillsProps){
     return (
-        <div className="grid gap-8 lg:grid-cols-2">
-            <div className="flex flex-col gap-4 px-20 py-8 bg-purple-700 rounded-lg hover:bg-purple-400 transition-colors">
-                <img src={TypeScript} alt="" />
+        <div className="flex flex-col gap-4 px-20 py-8 bg-purple-700 rounded-lg hover:bg-purple-400 transition-colors">
+            <img src={props.imageUrl} alt="" />
 
-                <span className="text-xl font-medium">TypeScript</span>
-            </div>
-            <div className="flex flex-col gap-4 px-20 py-8 bg-purple-700 rounded-lg hover:bg-purple-400 transition-colors">
-                <img src={TypeScript} alt="" />
-
-                <span className="text-xl font-medium">TypeScript</span>
-            </div>
+            <span className="text-xl font-medium">{props.title}</span>
         </div>
-        
     )
 }

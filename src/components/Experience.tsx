@@ -9,7 +9,7 @@ interface ExperienceProps {
 
 export function Experience(props: ExperienceProps) {
     return (
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 mb-8">
             <div className="flex items-start gap-2">
                 <div className="flex items-center gap-2">
                     <span className="bg-purple-400 px-4 py-2 rounded-3xl font-bold text-yellow-400">{props.year}</span>

@@ -19,7 +19,7 @@ export function Header() {
             <div className="flex flex-col justify-between items-center p-4 gap-10 lg:flex-row">
                 <img src={annaMaria} alt="Anna Maria" />
 
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 items-center lg:items-start">
 
                     <h1 className="text-4xl">Anna Maria</h1>
                     <h2 className="text-xl font-medium">Software Engineer</h2>

@@ -1,4 +1,4 @@
-import { ArrowCircleDown, At, GithubLogo, InstagramLogo, LinkedinLogo, Scroll, WhatsappLogo } from 'phosphor-react'
+import { ArrowCircleDown, At, GithubLogo, InstagramLogo, LinkedinLogo, Scroll, TwitterLogo, WhatsappLogo } from 'phosphor-react'
 import { Link } from 'react-router-dom'
 import annaMaria from '../assets/anna-maria.png'
 import cv from '../assets/cv.pdf'
@@ -24,7 +24,7 @@ export function Header() {
                     <h1 className="text-4xl">Anna Maria</h1>
                     <h2 className="text-xl font-medium">Software Engineer</h2>
 
-                    <div className="flex gap-6">
+                    <div className="flex gap-4">
                         <a 
                             href="https://github.com/imnotannamaria" 
                             target="_blank" 
@@ -45,6 +45,13 @@ export function Header() {
                             className="hover:text-yellow-400 transition-colors"
                         >
                             <InstagramLogo size={35} />
+                        </a>
+                        <a 
+                            href="https://twitter.com/imnotannamaria" 
+                            target="_blank" 
+                            className="hover:text-yellow-400 transition-colors"
+                        >
+                            <TwitterLogo size={35} />
                         </a>
                     </div>
                 </div>

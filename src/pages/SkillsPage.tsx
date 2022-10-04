@@ -1,13 +1,10 @@
 import { gql, useQuery } from "@apollo/client";
-import { BracketsCurly, Briefcase, Browser, SpinnerGap } from "phosphor-react";
-import { Link } from "react-router-dom";
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+import { SpinnerGap } from "phosphor-react";
 import { Skills } from "../components/Skills";
 
 const GET_SKILLS_QUERY = gql`
     query GetSkills {
-        skills {
+        skills(first:100) {
             id
             image {
             url

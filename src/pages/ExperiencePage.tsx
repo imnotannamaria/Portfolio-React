@@ -1,13 +1,10 @@
 import { gql, useQuery } from "@apollo/client";
-import { BracketsCurly, Briefcase, Browser, SpinnerGap } from "phosphor-react";
-import { Link } from "react-router-dom";
+import { SpinnerGap } from "phosphor-react";
 import { Experience } from "../components/Experience";
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
 
 const GET_EXPIRIENCE_QUERY = gql`
     query GetExperience {
-        experiences {
+        experiences(first:100) {
             year
             jobPosition
             company

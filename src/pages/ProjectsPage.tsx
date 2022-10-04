@@ -1,13 +1,10 @@
 import { gql, useQuery } from "@apollo/client";
-import { BracketsCurly, Briefcase, Browser, SpinnerGap } from "phosphor-react";
-import { Link } from 'react-router-dom'
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+import { SpinnerGap } from "phosphor-react";
 import { Project } from "../components/Project";
 
 const GET_PROJECTS_QUERY = gql`
     query GetProjects {
-        projects {
+        projects(first:100) {
             id
             title
             description

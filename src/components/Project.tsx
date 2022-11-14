@@ -17,7 +17,7 @@ export function Project(props: ProjectsProps) {
 
             <div className="flex flex-col items-center bg-purple-700 pt-4 pb-2 px-4 gap-2">
                 <span className="block text-xl font-bold">{props.title}</span>
-                <span className="block text-sm">{props.description}</span>    
+                <span className="block text-sm text-justify">{props.description}</span>    
             </div>
             
             <div className="flex justify-center gap-2 bg-purple-700 p-4 rounded-b-lg">

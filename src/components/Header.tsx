@@ -22,7 +22,8 @@ export function Header() {
                 <div className="flex flex-col gap-4 items-center lg:items-start">
 
                     <h1 className="text-4xl">Anna Maria</h1>
-                    <h2 className="text-xl font-medium">Software Engineer</h2>
+                    <h2 className="font-medium">Desenvolvedora Full-Stack</h2>
+                    
 
                     <div className="flex gap-4">
                         <a 
@@ -59,23 +60,24 @@ export function Header() {
 
             <div className="flex flex-col gap-4">
                 <div>
-                    <h1 className="text-xl font-medium">About Me</h1>
+                    <h1 className="text-xl font-medium">Sobre mim</h1>
                 </div>
 
                 <p>
-                    <span className="block">Hi All ✨</span> 
-                    <span className="block">My name is Anna Maria I am 20 years old and I am a full-stack developer.</span>
-                    <span className="block">In 2019 as soon as I finished high school at the age of 16, I decided to start studying Information System.</span>
-                    <span className="block">In 2020 I started studying HTML, CSS, JavaScript and React, I fell in love and decided that I would go deeper into web development.</span>
-                    <span className="block">In early 2021 I got an internship at Avanade Brasil where I'm still working, here at Avanade I work in the automation and ChatBot area.</span>
-                    <span className="block">I'm currently studying Python and the Django framework and I'm also constantly learning both web development (HTML, CSS, REACT) and ChatBot and all the automation stuff.</span>
+                    <span className="block">Olá ✨</span> 
+                    <span className="block">Sou Anna Maria, desenvolvedora full-stack de 21 anos.</span>
+                    <span className="block">Após concluir o ensino médio aos 16 anos, ingressei na faculdade de Sistemas de Informação em 2019.</span>
+                    <span className="block">Ao longo de 2020, mergulhei nos estudos de HTML, CSS, JavaScript e React, descobrindo minha verdadeira paixão pelo desenvolvimento web. Essa paixão me impulsionou a aprofundar meus conhecimentos nessa área em constante evolução.</span>
+                    <span className="block">Em 2021, tive a oportunidade de ingressar na Avanade Brasil, onde tenho atuado na área de IA e Chatbot utilizando tecnologias da Microsoft.</span>
+                    <span className="block">Atualmente, estou me dedicando ao estudo de ciência de dados, utilizando ferramentas como Python, Pandas e Scikit-learn, entre outras.</span>
+                    <span className="block">Continuo comprometida em aprimorar minhas habilidades tanto no desenvolvimento web, com enfoque em tecnologias como React e NodeJS, quanto na área de ChatBot.</span>
                 </p>
                     
             </div>
 
             <div className="flex flex-col gap-4 justify-between lg:flex-row">
                 <Link to={cv} target="_blank" className="flex justify-center gap-2 bg-purple-400 px-8 py-4 rounded hover:opacity-80 transition-opacity" download>
-                    Download CV
+                    Currículo
                     <ArrowCircleDown size={24} />
                 </Link>
 
@@ -84,7 +86,7 @@ export function Header() {
                     target="_blank" 
                     className="flex justify-center gap-2 bg-purple-400 px-8 py-4 rounded hover:opacity-80 transition-opacity"
                 >
-                    Contact me
+                    Fale comigo
                     <WhatsappLogo size={24} />
                 </a>
             </div>
